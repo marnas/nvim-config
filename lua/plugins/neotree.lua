@@ -2,7 +2,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.api.nvim_set_keymap("n", "<leader>e", ":NeoTreeRevealToggle<cr>", {})
+vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree reveal toggle<cr>", {})
 
 require("neo-tree").setup({
 	close_if_last_window = true,
