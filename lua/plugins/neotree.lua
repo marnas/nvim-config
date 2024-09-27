@@ -17,3 +17,10 @@ require("neo-tree").setup({
 		},
 	},
 })
+
+-- enable Neotree auto refresh after git commands
+require("neo-tree.sources.filesystem.commands")
+.refresh(
+    require("neo-tree.sources.manager")
+        .get_state("filesystem")
+)
